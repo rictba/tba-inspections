@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TBA Inspections | Pre-Purchase Car Inspections in Longmont &amp; North Denver</title>
+<meta name="description" content="Independent pre-purchase used car inspections in Longmont, Boulder and north Denver metro. Full mechanical check, computer scan and same-day photo report from $175.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#16181b;--bg2:#1c1e22;--card:#1f2226;--line:#2c2f34;--line2:#3a3e44;--text:#e8e6e1;--muted:#b9b6af;--dim:#8f8c86;--accent:#f59e0b;--accent2:#fbbf24}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.5}
+a{color:var(--accent)}a:hover{color:var(--accent2)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.display{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;line-height:.95}
+h2.display{font-size:clamp(36px,6vw,48px);margin:0 0 32px}
+.band{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+section{padding:64px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:14px 26px;border-radius:6px;font-weight:700;font-size:17px;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
+.btn-primary{background:var(--accent);color:var(--bg)}.btn-primary:hover{background:var(--accent2);color:var(--bg)}
+.btn-ghost{border:1px solid var(--line2);color:var(--text)}.btn-ghost:hover{color:var(--text);border-color:var(--muted)}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding-top:16px;padding-bottom:16px}
+.logo{font-size:28px;letter-spacing:.5px}.logo span{color:var(--accent)}
+.tag{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--dim)}
+.hero{display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding:72px 0 64px}
+.hero-main{flex:999 1 520px;min-width:0}
+.eyebrow{font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-size:clamp(48px,9vw,76px);margin:14px 0 20px}
+.lead{margin:0 0 32px;font-size:19px;color:var(--muted);max-width:560px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.price-card{flex:1 1 300px;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:28px}
+.price-card .big{font-size:88px;color:var(--accent);margin:8px 0 16px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.check{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:22px}
+.check h3{margin:0 0 8px;font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:700;text-transform:uppercase;color:var(--accent)}
+.check p{margin:0;font-size:15px;color:var(--muted)}
+.pkgs{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.pkg{border:1px solid var(--line);border-radius:10px;padding:30px}
+.pkg.featured{border:2px solid var(--accent)}
+.pkg h3{margin:0;font-family:'Barlow Condensed',sans-serif;font-size:30px;font-weight:800;text-transform:uppercase;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.badge{font-family:Inter,sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;background:var(--accent);color:var(--bg);padding:4px 8px;border-radius:4px}
+.pkg .amt{font-size:56px;color:var(--accent);margin:12px 0}
+.pkg ul{margin:0;padding-left:20px;color:var(--muted);line-height:1.8}
+.note{margin:20px 0 0;font-size:15px;color:var(--dim)}
+.steps{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.step{display:flex;gap:18px;align-items:flex-start}
+.num{flex:none;width:52px;height:52px;border-radius:50%;background:var(--accent);color:var(--bg);display:flex;align-items:center;justify-content:center;font-size:28px}
+.step h3{margin:0 0 6px;font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:700;text-transform:uppercase}
+.step p{margin:0;font-size:15px;color:var(--muted)}
+.book{display:flex;flex-wrap:wrap;gap:48px;padding:64px 0 80px}
+.book-info{flex:1 1 320px;min-width:0}
+.book-info p{font-size:17px;color:var(--muted)}
+form{flex:999 1 460px;min-width:0;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600}
+label.full{grid-column:1/-1}
+input,select,textarea{font:inherit;font-weight:400;font-size:16px;padding:14px;border-radius:6px;border:1px solid var(--line2);background:var(--card);color:var(--text);width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:transparent}
+textarea{min-height:96px;resize:vertical}
+form .btn{grid-column:1/-1}
+.hp{position:absolute;left:-9999px}
+footer{border-top:1px solid var(--line)}
+footer .wrap{padding-top:24px;padding-bottom:24px;font-size:13px;color:var(--dim)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div>
+      <div class="display logo">TBA <span>Inspections</span></div>
+      <div class="tag">Trusted Buyer Assurance</div>
+    </div>
+    <a class="btn btn-ghost" href="tel:+17204868964">Call / text (720) 486-8964</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="hero-main">
+      <div class="eyebrow">Buying a used car on the Front Range?</div>
+      <h1 class="display">Know what you're buying before you pay.</h1>
+      <p class="lead">Independent pre-purchase inspections by a working mechanic shop. We check the car top to bottom, scan every module, and hand you a photo report the same day, so you can buy, negotiate, or walk away.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#book">Book an inspection</a>
+        <a class="btn btn-ghost" href="#whats-checked">What we check</a>
+      </div>
+    </div>
+    <div class="price-card">
+      <div class="display" style="font-size:22px;color:var(--muted)">Starting at</div>
+      <div class="display big">$175</div>
+      <div style="color:var(--muted)">Most inspections done within 24–48 hours. Private-party, dealer, Marketplace, Craigslist: any car, any seller.</div>
+    </div>
+  </div>
+
+  <section id="whats-checked" class="band">
+    <div class="wrap">
+      <h2 class="display">What we check</h2>
+      <div class="grid">
+        <div class="check"><h3>Engine &amp; trans</h3><p>Leaks, noises, fluid condition, shifting, cold-start behavior.</p></div>
+        <div class="check"><h3>Computer scan</h3><p>Every module scanned for stored, pending and cleared codes.</p></div>
+        <div class="check"><h3>Frame &amp; rust</h3><p>Underbody, frame rails, signs of prior accident repair or flood.</p></div>
+        <div class="check"><h3>Brakes &amp; tires</h3><p>Pad and rotor wear, tire tread and age, alignment wear patterns.</p></div>
+        <div class="check"><h3>Suspension &amp; steering</h3><p>Ball joints, tie rods, shocks, bushings, CV axles.</p></div>
+        <div class="check"><h3>Body &amp; paint</h3><p>Panel gaps, repaint, overspray and mismatched parts.</p></div>
+        <div class="check"><h3>Electrical &amp; A/C</h3><p>Lights, windows, infotainment, heat and A/C performance.</p></div>
+        <div class="check"><h3>Road test</h3><p>How it drives, brakes, tracks and shifts at real speeds.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="display">Packages</h2>
+      <div class="pkgs">
+        <div class="pkg">
+          <h3>Standard</h3>
+          <div class="display amt">$175</div>
+          <ul>
+            <li>Full mechanical inspection</li>
+            <li>Computer scan of all modules</li>
+            <li>Test drive</li>
+            <li>Same-day photo report</li>
+          </ul>
+        </div>
+        <div class="pkg featured">
+          <h3>Plus + Safety Tech <span class="badge">Most popular</span></h3>
+          <div class="display amt">$275</div>
+          <ul>
+            <li>Everything in Standard</li>
+            <li>ADAS check: cameras, radar, lane-keep, blind spot, auto-braking</li>
+            <li>Calibration quote if anything's off</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Lifted, modified, exotic and other specialty vehicles are priced separately. Call or text for a quote.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <h2 class="display">How it works</h2>
+      <div class="steps">
+        <div class="step"><div class="num display">1</div><div><h3>Send the listing</h3><p>Book online or text us the link, VIN and where the car is.</p></div></div>
+        <div class="step"><div class="num display">2</div><div><h3>We inspect it</h3><p>Seller drops it at our shop, or we arrange a time to see it.</p></div></div>
+        <div class="step"><div class="num display">3</div><div><h3>Get your report</h3><p>Photos, findings and repair estimates, usually same day.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="book" class="wrap book">
+    <div class="book-info">
+      <h2 class="display">Book an inspection</h2>
+      <p>Send us the listing and we'll confirm a time, usually same or next day. Prefer to talk? Call or text <a href="tel:+17204868964">(720) 486-8964</a>, or email <a href="mailto:TBAIncii@gmail.com">TBAIncii@gmail.com</a>.</p>
+      <p style="font-size:15px;color:var(--dim)">13770 Deere Ct, Longmont, CO 80504<br>Serving Longmont, Boulder, Erie, Firestone, Frederick, Broomfield, Thornton and the north Denver metro.</p>
+    </div>
+    <form action="https://formsubmit.co/TBAIncii@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New inspection request - TBA Inspections">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label>Your name<input type="text" name="name" required autocomplete="name"></label>
+      <label>Phone<input type="tel" name="phone" required autocomplete="tel"></label>
+      <label>Email<input type="email" name="email" autocomplete="email"></label>
+      <label>Year / make / model<input type="text" name="vehicle" required></label>
+      <label>Listing link or VIN<input type="text" name="listing_or_vin"></label>
+      <label>Where's the car?<input type="text" name="car_location" placeholder="City or seller address"></label>
+      <label>Package
+        <select name="package">
+          <option>Standard ($175)</option>
+          <option>Plus + Safety Tech ($275)</option>
+          <option>Lifted / specialty vehicle (quote)</option>
+        </select>
+      </label>
+      <label>Preferred day / time<input type="text" name="preferred_time"></label>
+      <label class="full">Anything else?<textarea name="notes"></textarea></label>
+      <button class="btn btn-primary" type="submit">Request inspection</button>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">TBA Inspections, Trusted Buyer Assurance · A TBA Inc. company · Independent inspection: we don't sell the car you're buying. · (720) 486-8964 · TBAIncii@gmail.com</div>
+</footer>
+
+</body>
+</html>
